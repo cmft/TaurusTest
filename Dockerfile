@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y python-taurus
 RUN apt-get remove -y python-taurus
 # Install mysql
 RUN apt-get update && apt-get install -y mysql-server
-ENTRYPOINT service mysql start
+#ENTRYPOINT service mysql start
 # Do not work!!
 #RUN apt-get update && apt-get install -y tango-db
 # CMD service tango-db start
